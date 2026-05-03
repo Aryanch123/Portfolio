@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "Atharv Srivastava",
-  description: 'I make AI things happen',
+  title: "Aryan Chauhan",
+  description: "Full Stack Developer, AI & Data Science, and Cloud Automation portfolio.",
 };
 
 export default function RootLayout({
