@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 201 9% 52%;
+    --primary-foreground: 0 0% 10%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 201 9% 52%;
+    --accent-foreground: 0 0% 10%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 201 9% 55%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 180 25% 25%;
+    --foreground: 0 0% 83%;
+    --card: 210 2% 10%;
+    --card-foreground: 0 0% 83%;
+    --popover: 210 5% 11%;
+    --popover-foreground: 0 0% 83%;
+    --primary: 201 9% 52%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 180 25% 35%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 180 25% 35%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 201 9% 52%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 180 25% 35%;
+    --input: 180 25% 35%;
+    --ring: 201 9% 55%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply scroll-smooth;
+    min-height: 100%;
+  }
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  .dark body {
+    background-image: linear-gradient(to bottom, #0d3b3b, #031a1a 200vh);
+    background-color: #031a1a;
+  }
+}
